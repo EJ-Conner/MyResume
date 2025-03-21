@@ -1,18 +1,19 @@
 # MyResume
 
+This repository contains my resume written in LaTeX as well as the PDF version. Last updated on 2025/03/20.
 
-This repository contains my resume written in LaTeX as well as the PDF version. Last updated on 03/20/2025.
-
-Compiling the LaTeX File
+## Compiling the LaTeX File
 You have two options to compile the LaTeX file (.tex) into a PDF:
 
-Using Overleaf
-Go to Overleaf.
-Create a new project and upload the .tex file.
-Overleaf will automatically compile the .tex file into a PDF that you can download.
-Compiling Locally
-Install a LaTeX distribution, such as TeX Live or MiKTeX.
-Open your terminal or command prompt.
-Navigate to the directory containing the .tex file.
-Run the command: pdflatex KyleEarpResume.tex.
-This will generate a PDF file in the same directory.
+### Using Overleaf
+1. Go to [Overleaf](https://www.overleaf.com).
+2. Create a new project and upload the `.tex` file.
+3. Overleaf will automatically compile the `.tex` file into a PDF that you can download.
+
+### Compiling Locally
+1. Install a LaTeX distribution, such as TeX Live or MiKTeX.
+2. Open your terminal or command prompt.
+3. Navigate to the directory containing the `.tex` file.
+4. Run the command: `pdflatex KyleEarpResume.tex`.
+   
+   This will generate a PDF file in the same directory.
