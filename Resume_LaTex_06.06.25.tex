@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Ethan Conner
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\setlength{\footskip}{4.08003pt}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}, topsep=-3pt, itemsep=-3pt]
+}
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textsc{Ethan Conner}} \\ \vspace{1pt}
+    \small 682-208-6226 $|$ \href{mailto:ethanjacobconner@gmail.com}{\underline{ethanjacobconner@gmail.com}} $|$ \href{https://github.com/EJ-Conner}{\underline{github.com/EJ-Conner}}
+\end{center}
+
+
+%-----------EXPERIENCE-------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{August 2024 -- May 2025}
+      {Tarleton State University}{Stephenville, TX}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of a model written in C and CUDA to visualize data.}
+        \resumeItem{Presented research findings at academic conferences and seminars.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Bioinformaticist}{May 2024 -- February 2025}
+      {Texas A\&M Agrilife}{Stephenville, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented Bash scripts to automatize analyzing DNA sequence reads using terminal-based bioinformatics tools.}
+        \resumeItem{Built and managed multiple lab computers and ensured accuracy and integrity of sequencing for publication results.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Patient Access Specialist}{February 2023 -- Present}
+      {Surepoint - Emergency Center}{Stephenville, TX}
+      \resumeItemListStart
+        \resumeItem{Primary contact for patients entering the ER. This included using a customer relationship management system.}
+        \resumeItem{Processed and organized patient records using electronic health record systems, and managed financial transactions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Acting Center Management}{October 2021 -- January 2023}
+      {Mathnasium}{Hurst, TX}
+      \resumeItemListStart
+        \resumeItem{Management experience at tutoring facility  K-12.}
+      \resumeItemListEnd
+
+    
+    \resumeSubheading
+      {Cybersecurity Intern}{April 2025 -- Present}
+      {RedKnight}{Mineral Wells, TX}
+      \resumeItemListStart
+        \resumeItem{Created documentation to guide interns in effectively using common security tools and software.}
+        \resumeItem{Deployed virtual machines on the network to simulate traffic for the in-house intrusion detection system (IDS).}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%------------PROJECTS------------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{N-Body Simulations of Microplastic Removal Using Polymers} $|$ \emph{C, CUDA}}{August 2024 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Co-developed and optimized a CUDA-based N-body simulation of microplastic-polymer interactions with real-time 3D visualization using OpenGL, boosting performance and user engagement.}
+            \resumeItem{Helped design an interface and collaborated with a team to align the tool with project goals and user needs.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Capstone - Botnet Traffic Detection Analysis Program} $|$ \emph{Python}}{January 2025 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Co-developed a PyQt6-based GUI application for botnet detection using machine learning and neural networks on the CTU-13 dataset.}
+            \resumeItem{Improved usability and accessibility by integrating a PyQt6 GUI for dataset upload, algorithm selection, training, and real-time analysis.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING/Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, Bash} \\
+     \textbf{Developer Tools}{: Git, Visual Studio, Linux, VS Code} \\
+     \textbf{Libraries}{: Cryptography, Sklearn, Matplotlib, NumPy, Pandas, PyQt6, CUDA} \\
+     \textbf{Personal}{: Communication, IT foundation, documentation, willingness to learn} \\
+    }}
+ \end{itemize}
+
+
+%------------Certifications------------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Basic Life Support(BLS)}{  Expires: February 2027} \\
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarrant County Community College \textnormal{- GPA: 4.0}}{Hurst, TX}
+      {}{August 2021 -- December 2022}
+      \resumeItemListStart
+        \resumeItem{36 credit hours completed}
+        \resumeItem{Phi Theta Kappa (honor society)}
+        \resumeItem{Vice president of award winning Chemistry Club and treasurer of the Infinity Math Club}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarleton State University \textnormal{- GPA: 3.84}}{Stephenville, TX}
+      {}{Janurary 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{B.S. in Cybersecurity, minor in mathematics}
+        \resumeItem{Vice President of Tarleton Mathematics Club and Vice President of Tarleton Computer Society}
+        \resumeItem{Notable Achievements: President's List 3 times; Tarleton RIED Symposium 1st Place 2025, Capstone 3rd Place}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
